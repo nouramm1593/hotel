@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b46">
+  <title>الرئيسية | فندق لؤلؤة الشام</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { navy: '#102b46', 'navy-dark': '#0a1d31', gold: '#c9a46a', cream: '#f7f5f0' } } }
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3" aria-label="لؤلؤة الشام - الرئيسية">
+        <span class="brand-mark">ل</span>
+        <span><span class="brand-name block">لؤلؤة الشام</span><span class="brand-subtitle block">إقامة تليق بكم</span></span>
+      </a>
+      <nav class="desktop-nav items-center gap-6" aria-label="القائمة الرئيسية"><a class="nav-link active" href="index.html">الرئيسية</a>
+<a class="nav-link " href="rooms.html">الغرف والأجنحة</a>
+<a class="nav-link " href="reviews.html">آراء النزلاء</a>
+<a class="nav-link " href="faq.html">الأسئلة الشائعة</a>
+<a class="nav-link " href="contact.html">اتصل بنا</a></nav>
+      <div class="flex items-center gap-2">
+        <a class="btn-primary desktop-booking" href="booking.html">احجز إقامتك</a>
+        <button class="mobile-menu" id="menu-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-links">☰</button>
+      </div>
+    </div>
+    <nav id="mobile-links" class="mobile-links" aria-label="قائمة الهاتف"><a class="nav-link active" href="index.html">الرئيسية</a>
+<a class="nav-link " href="rooms.html">الغرف والأجنحة</a>
+<a class="nav-link " href="reviews.html">آراء النزلاء</a>
+<a class="nav-link " href="faq.html">الأسئلة الشائعة</a>
+<a class="nav-link " href="contact.html">اتصل بنا</a>
+      <a class="btn-primary mt-2 text-center" href="booking.html">احجز إقامتك</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="max-w-6xl mx-auto w-full px-5 py-16">
+    <span class="inline-block rounded-full border border-white/40 bg-white/10 px-4 py-1 text-sm mb-5">أهلاً بكم في لؤلؤة الشام</span>
+    <h1 class="mb-5">إقامة هادئة، وضيافة تبقى في الذاكرة</h1>
+    <p class="max-w-2xl text-lg text-white/90 mb-8">اكتشفوا تجربة إقامة تجمع الراحة، والخدمة المدروسة، والموقع المناسب لرحلتكم.</p>
+    <div class="flex flex-wrap gap-3"><a class="btn-primary" href="booking.html">احجز إقامتك الآن</a><a class="btn-outline" href="rooms.html">اكتشف الغرف</a></div>
+  </div>
+</section>
+<section class="section">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center max-w-2xl mx-auto mb-10"><span class="section-label">إقامة تناسبك</span><h2 class="section-title mt-2">اختر الغرفة التي تشبه رحلتك</h2><p class="muted mt-3">خيارات متنوعة صُممت لتمنحك الراحة والخصوصية طوال إقامتك.</p></div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="room-card"><img class="room-image" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="غرفة مزدوجة"><div class="p-5"><h3 class="text-xl font-extrabold text-navy">غرفة كلاسيكية</h3><p class="muted text-sm mt-2">مساحة مريحة لإقامة هادئة لشخصين.</p><div class="flex items-center justify-between mt-5"><span class="price">45$ <small>/ الليلة</small></span><a class="nav-link" href="room-details.html">التفاصيل ←</a></div></div></article>
+      <article class="room-card"><img class="room-image" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="غرفة ديلوكس"><div class="p-5"><h3 class="text-xl font-extrabold text-navy">غرفة ديلوكس</h3><p class="muted text-sm mt-2">مساحة أوسع وتفاصيل إضافية للراحة.</p><div class="flex items-center justify-between mt-5"><span class="price">65$ <small>/ الليلة</small></span><a class="nav-link" href="room-details.html">التفاصيل ←</a></div></div></article>
+      <article class="room-card"><img class="room-image" src="https://images.unsplash.com/photo-1611892440504-4cb7a8b6f6e6?auto=format&fit=crop&w=900&q=80" alt="جناح فندقي"><div class="p-5"><h3 class="text-xl font-extrabold text-navy">جناح لؤلؤة</h3><p class="muted text-sm mt-2">خيار رحب يناسب الإقامات المميزة.</p><div class="flex items-center justify-between mt-5"><span class="price">95$ <small>/ الليلة</small></span><a class="nav-link" href="room-details.html">التفاصيل ←</a></div></div></article>
+    </div>
+    <div class="text-center mt-9"><a class="btn-primary" href="rooms.html">عرض جميع الغرف</a></div>
+  </div>
+</section>
+<section class="section section-soft"><div class="max-w-6xl mx-auto px-5"><div class="text-center mb-9"><span class="section-label">لماذا لؤلؤة الشام؟</span><h2 class="section-title mt-2">تفاصيل صغيرة تصنع فرقاً كبيراً</h2></div><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+  <div class="feature-card"><span class="feature-icon">✦</span><h3 class="font-extrabold text-navy mt-4">راحة وهدوء</h3><p class="muted text-sm mt-2">مساحات مهيأة للاسترخاء بعد يوم طويل.</p></div>
+  <div class="feature-card"><span class="feature-icon">⌂</span><h3 class="font-extrabold text-navy mt-4">موقع مناسب</h3><p class="muted text-sm mt-2">سهولة الوصول إلى الوجهات والخدمات.</p></div>
+  <div class="feature-card"><span class="feature-icon">♡</span><h3 class="font-extrabold text-navy mt-4">ضيافة أصيلة</h3><p class="muted text-sm mt-2">اهتمام بالتفاصيل واستقبال يليق بكم.</p></div>
+  <div class="feature-card"><span class="feature-icon">✓</span><h3 class="font-extrabold text-navy mt-4">حجز واضح</h3><p class="muted text-sm mt-2">خطوات سهلة لطلب الحجز ومتابعته.</p></div>
+</div></div></section>
+
+</main>
+<footer class="site-footer">
+  <footer class="site-footer">
+      <div class="max-w-7xl mx-auto px-5 py-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="brand-mark">ل</span>
+            <strong class="text-white text-lg">لؤلؤة الشام</strong>
+          </div>
+          <p class="text-sm leading-8">
+            وجهتك لإقامة تجمع بين الراحة والخصوصية والخدمة المميزة.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold mb-4">روابط سريعة</h3>
+          <div class="grid gap-2">
+            <a class="footer-link" href="index.html">الرئيسية</a>
+            <a class="footer-link" href="rooms.html">الغرف والأجنحة</a>
+            <a class="footer-link" href="booking.html">الحجز</a>
+            <a class="footer-link" href="reviews.html">آراء النزلاء</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold mb-4">خدمة العملاء</h3>
+          <div class="grid gap-2">
+            <a class="footer-link" href="faq.html">الأسئلة الشائعة</a>
+            <a class="footer-link" href="contact.html">تواصل معنا</a>
+            <p class="text-sm">الهاتف: +963 11 000 0000</p>
+            <p class="text-sm">البريد: info@example.com</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold mb-4">مواعيد الخدمة</h3>
+          <p class="text-sm leading-8">الاستقبال: على مدار الساعة</p>
+          <p class="text-sm leading-8">تسجيل الدخول: 10:00 صباحاً</p>
+          <p class="text-sm leading-8">تسجيل المغادرة: 10:00 مساءً
+        </div>
+      </div>
+
+      <div class="border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row
+          justify-between gap-2 text-xs text-slate-400">
+          <span>©فندق لؤلؤة الشام جميع الحقوق محفوظة.2026</span>
+          <span>موقع تجريبي لأغراض العرض والتطوير</span>
+        </div>
+      </div>
+  </footer>
+  <!-- <div class="max-w-6xl mx-auto px-5 py-12 grid md:grid-cols-3 gap-9">
+    <div><div class="flex items-center gap-3 mb-4"><span class="brand-mark">ل</span><strong class="text-white text-lg">لؤلؤة الشام</strong></div><p class="text-sm text-slate-300">وجهتكم لإقامة مريحة تجمع الضيافة الأصيلة والتفاصيل المدروسة.</p></div>
+    <div><h3 class="text-white font-extrabold mb-3">روابط سريعة</h3><div class="grid grid-cols-2 gap-2"><a class="footer-link" href="rooms.html">الغرف والأجنحة</a><a class="footer-link" href="booking.html">الحجز</a><a class="footer-link" href="reviews.html">آراء النزلاء</a><a class="footer-link" href="faq.html">الأسئلة الشائعة</a><a class="footer-link" href="contact.html">اتصل بنا</a></div></div>
+    <div><h3 class="text-white font-extrabold mb-3">تواصل معنا</h3><p class="footer-link">دمشق، سورية</p><p class="footer-link" dir="ltr">+963 11 000 0000</p><p class="footer-link">info@loloat-alsham.example</p></div>
+  </div>
+  <div class="border-t border-white/10 text-center text-xs text-slate-400 py-4">© <span data-current-year></span> فندق لؤلؤة الشام. جميع الحقوق محفوظة.</div>
+</footer> -->
+</body>
+</html>
